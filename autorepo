@@ -1,0 +1,8 @@
+#!/bin/sh 
+
+
+cd /User/Repo
+apt-ftparchive packages ./deb > Packages
+gzip Packages
+apt-ftparchive packages ./deb > Packages
+bzip2 Packages
